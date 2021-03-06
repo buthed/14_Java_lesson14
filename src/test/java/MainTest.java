@@ -22,8 +22,8 @@ class MainTest {
     static Stream<Arguments> arrayPlusBul() {
         return Stream.of(
                 Arguments.of((Object) new int[]{1, 1, 1, 4, 4, 1, 4, 4}, true),
-//                Arguments.of((Object) new int[]{1, 1, 1, 1, 1, 1}, false),
-//                Arguments.of((Object) new int[]{4, 4, 4, 4}, false),
+                Arguments.of((Object) new int[]{1, 1, 1, 1, 1, 1}, false),
+                Arguments.of((Object) new int[]{4, 4, 4, 4}, false),
                 Arguments.of((Object) new int[]{1, 4, 4, 1, 1, 4, 3}, false)
         );
     }
